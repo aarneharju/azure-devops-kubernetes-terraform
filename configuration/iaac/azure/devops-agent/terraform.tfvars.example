@@ -1,0 +1,28 @@
+# Azure Authentication
+# These can also be set via environment variables:
+#   ARM_CLIENT_ID, ARM_CLIENT_SECRET, ARM_SUBSCRIPTION_ID, ARM_TENANT_ID
+client_id       = "your-service-principal-client-id"
+client_secret   = "your-service-principal-client-secret"
+subscription_id = "your-azure-subscription-id"
+tenant_id       = "your-azure-tenant-id"
+
+# Azure DevOps Configuration
+azdo_org_name   = "your-org-name"  # From https://dev.azure.com/your-org-name
+azdo_pat        = "your-personal-access-token"
+azdo_agent_pool = "Default"        # Or create a custom pool
+agent_name      = "self-hosted"
+
+# Resource Configuration
+resource_group = "devops_agent_rg"
+environment    = "dev"
+location       = "swedencentral"
+
+# VM Configuration
+vm_size         = "Standard_B1s"   # 1 vCPU, 1 GB RAM - upgrade if builds are slow
+admin_username  = "azureuser"
+ssh_public_key  = "~/.ssh/id_ed25519.pub"
+os_disk_size_gb = 50
+
+# Network Configuration
+enable_public_ip = true
+allowed_ssh_cidr = "*"             # Open for dev/learning; restrict in production
