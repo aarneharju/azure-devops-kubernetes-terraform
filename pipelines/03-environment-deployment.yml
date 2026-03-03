@@ -8,7 +8,7 @@ stages:
 - stage: Build
   displayName: 'Build stage'
   jobs:
-  - job: Build job
+  - job: BuildJob
     displayName: 'Build job'
     steps:
     - script: echo Building the application...

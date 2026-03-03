@@ -13,8 +13,8 @@ target/
 .springBeans
 .sts4-cache
 .terraform
-*.terraform.tfstate
-*.terraform.tfstate.backup
+*.tfstate
+*.tfstate.backup
 
 ### IntelliJ IDEA ###
 .idea
